@@ -1,0 +1,46 @@
+--- a/simulation/leaderboard/team_code/pnp_agent_e2e.py
++++ b/simulation/leaderboard/team_code/pnp_agent_e2e.py
+@@ -242,16 +242,43 @@
+     )
+         self._rsu_radar_log_file = None
+         self.use_semantic = self.config['perception'].get('use_semantic', False)
+         print('if use semantic?', self.use_semantic)
+         
+         # load perception model and dataloader
+         perception_hypes = yaml_utils.load_yaml(self.config['perception']['perception_model_dir'])
+ 
++        # STAGE9B_EXPLICIT_WEATHER_OVERRIDE
++        # The trained model config is clean/OFF by default. Allow each
++        # closed-loop PnP config to select OFF, RF2, or RF3 explicitly.
++        weather_override = self.config.get(
++            "stage9b_joint_weather_override"
++        )
++
++        if weather_override is not None:
++            if not isinstance(weather_override, dict):
++                raise TypeError(
++                    "stage9b_joint_weather_override must be a mapping"
++                )
++
++            base_joint_weather = dict(
++                perception_hypes.get("stage9b_joint_weather", {})
++            )
++            base_joint_weather.update(weather_override)
++            perception_hypes["stage9b_joint_weather"] = base_joint_weather
++        # STAGE9B_JOINT_WEATHER_BRIDGE: reject double weather degradation.
++        if perception_hypes.get("stage9b_joint_weather", {}).get("enabled", False):
++            from opencood.data_utils.augmentor.joint_weather_bridge_stage9b import (
++                validate_joint_weather,
++            )
++            validate_joint_weather(
++                perception_hypes,
++                legacy_agent_rain=self.config.get("legacy_rsu_rain", {}).get("enabled", True),
++            )
+         self.config['perception']['perception_hypes'] = perception_hypes
+         # self.config.perception_hypes = perception_hypes
+         
+         # pose noise
+         # np.random.seed(30330)
+         # torch.manual_seed(10000)
+         if 'pose_error' in self.config['perception']:
+             noise_setting = OrderedDict()

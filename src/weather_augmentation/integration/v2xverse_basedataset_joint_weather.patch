@@ -1,0 +1,51 @@
+--- a/opencood/data_utils/datasets/basedataset/v2xverse_basedataset.py
++++ b/opencood/data_utils/datasets/basedataset/v2xverse_basedataset.py
+@@ -88,16 +88,23 @@
+         if self.radar_mode not in (
+                 "none", "density", "density_doppler"):
+             raise ValueError(
+                 "Unsupported radar mode: {}".format(
+                     self.radar_mode
+                 )
+             )
+ 
++        # Combined rain+fog LiDAR degradation. Disabled by default.
++        # STAGE9B_JOINT_WEATHER_BRIDGE: disabled by default.
++        if params.get("stage9b_joint_weather", {}).get("enabled", False):
++            from opencood.data_utils.augmentor.joint_weather_bridge_stage9b import (
++                validate_joint_weather,
++            )
++            validate_joint_weather(params)
+         adverse = params.get("adverse_weather", {})
+         self.adverse_weather_enabled = bool(
+             adverse.get("enabled", False)
+         )
+         self.adverse_weather_severity = float(
+             adverse.get("severity", 1.0)
+         )
+         self.adverse_weather_base_seed = int(
+@@ -408,17 +415,23 @@
+                     output_record['rgb_rear'] = extra_source['rgb_rear']
+                 else:
+                     output_record['rgb_front'] = None
+                     output_record['rgb_left'] = None
+                     output_record['rgb_right'] = None
+                     output_record['rgb_rear'] = None
+                 BEV = None
+ 
+-            if self.adverse_weather_enabled:
++            if self.params.get("stage9b_joint_weather", {}).get("enabled", False):
++                from opencood.data_utils.augmentor.joint_weather_bridge_stage9b import (
++                    apply_joint_weather,
++                )
++                lidar, joint_weather_info = apply_joint_weather(self, lidar, agent)
++                output_record["stage9b_joint_weather"] = joint_weather_info
++            elif self.adverse_weather_enabled:
+                 from opencood.data_utils.augmentor.combined_adverse_weather import (
+                     apply_combined_adverse_weather,
+                     stable_weather_seed,
+                 )
+ 
+                 if route_dir is not None:
+                     weather_source = os.path.abspath(route_dir)
+                 else:

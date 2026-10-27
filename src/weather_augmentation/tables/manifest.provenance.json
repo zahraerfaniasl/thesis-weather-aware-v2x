@@ -1,0 +1,751 @@
+{
+  "purpose": "Fog response tables under proposed joint rain-fog extinction",
+  "assumption": "Homogeneous additive extinction",
+  "fog_backscatter": "Fog beta only; rain sampling remains separate",
+  "reference_hashes": {
+    "theory.py": "c334748dfa432fcaf7a2c6fb206ffdf333ed2ac8643afd8b31c0508e223f2f5a",
+    "fog_simulation.py": "c4cbd47030d54b082bcac206ac67e2f521efc632b9706476fbe4519e629189b4"
+  },
+  "lisa_working_copy": "/home/user/V2Xverse/results/stage9b_weather_reference/LISA_py37_check_20260909_112239",
+  "sensor_calibrated": false,
+  "joint_return_selection_implemented": false,
+  "reference_equivalence_tests": "Fog-only table construction PASS at alpha=0.06; joint model tests pending",
+  "profiles": [
+    {
+      "profile": "RF1",
+      "rain_rate_mm_h": 25.0,
+      "alpha_rain_per_m": 0.0027898066303372747,
+      "alpha_fog_per_m": 0.03,
+      "alpha_total_per_m": 0.03278980663033727,
+      "beta_fog": 0.000460655316959561,
+      "target_range_max_m": 13.0,
+      "response_grid_max_m": 200.0,
+      "response_grid_samples": 2000,
+      "integration_samples": 2000,
+      "tau_h_s": 2e-08,
+      "overlap_r1_m": 0.9,
+      "overlap_r2_m": 1.0,
+      "seconds": 11.650501773983706,
+      "table": "/home/user/V2Xverse/results/stage9b_weather_reference/joint_response_tables_unshifted_20260909_120940/RF1.npz",
+      "sha256": "9f6f0f9e3a57a9e4c55d4167656a5ccc1409ff3de109d335d962245a0817ea4c",
+      "source_table": "/home/user/V2Xverse/results/stage9b_weather_reference/joint_response_tables_20260909_120040/RF1.npz",
+      "source_sha256": "0e637354b9d08dd5554c057b9e6ba8e0cfd8a23d2558c88d9e6ef77519c3be26",
+      "distance_convention": "unshifted_grid_peak",
+      "integrals_unchanged": true
+    },
+    {
+      "profile": "RF2",
+      "rain_rate_mm_h": 50.0,
+      "alpha_rain_per_m": 0.004314408151764052,
+      "alpha_fog_per_m": 0.06,
+      "alpha_total_per_m": 0.06431440815176405,
+      "beta_fog": 0.000921310633919122,
+      "target_range_max_m": 13.0,
+      "response_grid_max_m": 200.0,
+      "response_grid_samples": 2000,
+      "integration_samples": 2000,
+      "tau_h_s": 2e-08,
+      "overlap_r1_m": 0.9,
+      "overlap_r2_m": 1.0,
+      "seconds": 11.306927110999823,
+      "table": "/home/user/V2Xverse/results/stage9b_weather_reference/joint_response_tables_unshifted_20260909_120940/RF2.npz",
+      "sha256": "a323bc0a486e3a1c45601de145d9d23eabaae72f11f2e2aed30fd859d942792d",
+      "source_table": "/home/user/V2Xverse/results/stage9b_weather_reference/joint_response_tables_20260909_120040/RF2.npz",
+      "source_sha256": "4f298f74f7d01d93078f5b34c8930e02fefaadaff48757418d134677b32ddbb3",
+      "distance_convention": "unshifted_grid_peak",
+      "integrals_unchanged": true
+    },
+    {
+      "profile": "RF3",
+      "rain_rate_mm_h": 50.0,
+      "alpha_rain_per_m": 0.004314408151764052,
+      "alpha_fog_per_m": 0.2,
+      "alpha_total_per_m": 0.20431440815176408,
+      "beta_fog": 0.0030710354463970736,
+      "target_range_max_m": 13.0,
+      "response_grid_max_m": 200.0,
+      "response_grid_samples": 2000,
+      "integration_samples": 2000,
+      "tau_h_s": 2e-08,
+      "overlap_r1_m": 0.9,
+      "overlap_r2_m": 1.0,
+      "seconds": 11.05203445101506,
+      "table": "/home/user/V2Xverse/results/stage9b_weather_reference/joint_response_tables_unshifted_20260909_120940/RF3.npz",
+      "sha256": "437f7a7cf4e2af119ff1ecbeb7638f8cfd74a4930a7bb594c51726bc1d6d7798",
+      "source_table": "/home/user/V2Xverse/results/stage9b_weather_reference/joint_response_tables_20260909_120040/RF3.npz",
+      "source_sha256": "81dbc98ee1f3e88658c58a835afc0df8a9ca1c6ce00f7224d2bbd0b187973e03",
+      "distance_convention": "unshifted_grid_peak",
+      "integrals_unchanged": true
+    }
+  ],
+  "parent_manifest": "/home/user/V2Xverse/results/stage9b_weather_reference/joint_response_tables_20260909_120040/manifest.json",
+  "distance_convention": "unshifted_grid_peak",
+  "correction": "Undo pulse shift to match runtime original lookup tables",
+  "fog_only_reference_equivalence": {
+    "alpha": 0.06,
+    "targets_checked": 131,
+    "range_m": [
+      0,
+      13
+    ],
+    "passed": true,
+    "checks": [
+      {
+        "target_m": 0.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 0.1,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 0.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 0.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 0.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 0.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 0.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 0.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 0.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 0.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 1.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 1.1,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 1.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 1.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 1.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 1.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 1.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 1.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 1.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 1.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 2.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 2.1,
+        "distance_error_m": 0.0,
+        "integral_error": 5.169878828456423e-26
+      },
+      {
+        "target_m": 2.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 2.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 2.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 2.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 2.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 2.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 2.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 2.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 3.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 3.1,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 3.2,
+        "distance_error_m": 0.0,
+        "integral_error": 8.271806125530277e-25
+      },
+      {
+        "target_m": 3.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 3.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 3.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 3.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 3.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 3.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 3.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 4.0,
+        "distance_error_m": 0.0,
+        "integral_error": 4.1359030627651384e-25
+      },
+      {
+        "target_m": 4.1,
+        "distance_error_m": 0.0,
+        "integral_error": 4.1359030627651384e-25
+      },
+      {
+        "target_m": 4.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 4.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 4.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 4.5,
+        "distance_error_m": 0.0,
+        "integral_error": 8.271806125530277e-25
+      },
+      {
+        "target_m": 4.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 4.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 4.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 4.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 5.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 5.1,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 5.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 5.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 5.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 5.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 5.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 5.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 5.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 5.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 6.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 6.1,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 6.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 6.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 6.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 6.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 6.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 6.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 6.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 6.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 7.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 7.1,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 7.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 7.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 7.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 7.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 7.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 7.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 7.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 7.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 8.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 8.1,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 8.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 8.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 8.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 8.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 8.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 8.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 8.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 8.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 9.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 9.1,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 9.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 9.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 9.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 9.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 9.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 9.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 9.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 9.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 10.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 10.1,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 10.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 10.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 10.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 10.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 10.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 10.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 10.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 10.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 11.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 11.1,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 11.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 11.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 11.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 11.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 11.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 11.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 11.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 11.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 12.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 12.1,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 12.2,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 12.3,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 12.4,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 12.5,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 12.6,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 12.7,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 12.8,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 12.9,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      },
+      {
+        "target_m": 13.0,
+        "distance_error_m": 0.0,
+        "integral_error": 0.0
+      }
+    ]
+  },
+  "joint_model_physical_validation": false
+}

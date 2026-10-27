@@ -1,0 +1,20 @@
+# Portable Stage-9b joint rain-fog configuration fragment.
+#
+# The relative manifest path assumes execution from the repository root.
+# For another working directory, replace manifest_path with an absolute path.
+#
+# The closed-loop agent templates provide the per-run OFF/RF2/RF3 override.
+
+adverse_weather:
+  enabled: false
+  base_seed: 2026
+  severity: 1.0
+
+stage9b_joint_weather:
+  enabled: false
+  manifest_path: "src/weather_augmentation/tables/manifest.json"
+  profile: RF2
+  pmin: 2.25e-05
+  beta0: 3.1830988618379064e-07
+  base_seed: 2026
+  seed_policy: content_role_v1
