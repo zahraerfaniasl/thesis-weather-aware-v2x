@@ -1,0 +1,93 @@
+control:
+  turn_KP: 1.0
+  turn_KI: 0.2
+  turn_KD: 0.1
+  turn_n: 5
+  speed_KP: 5.0
+  speed_KI: 1
+  speed_KD: 0.1
+  speed_n: 20
+  max_throttle: 0.75
+  brake_speed: 0.1
+  brake_ratio: 1.1
+  clip_delta: 0.35
+  max_speed: 8
+  collision_buffer:
+  - 2.5
+  - 1.2
+  momentum: 0
+  target_point_distance: 10
+  detect_threshold: 0.04
+RSU:
+  change_rsu_frame: 5
+  rsu_height: 7.5
+  rsu_lane_side: right
+  rsu_distance: 12
+simulation:
+  ego_num: 1
+  skip_frames: 4
+perception:
+  core_method: collaborative_perception
+  detect_threshold: 0.04
+  detection_range:
+  - 36
+  - 12
+  - 12
+  - 12
+  perception_model_dir: "REPLACE_WITH_BASELINE_PERCEPTION_MODEL_DIR"
+planning:
+  core_method: MotionNet
+  planner_config: codriving/hypes_yaml/codriving/end2end_codriving.yaml
+  planner_model_checkpoint: checkpoints/codriving/planner/codriving_planner.ckpt
+rsu_radar:
+  enabled: true
+  range_m: 100.0
+  horizontal_fov_deg: 120.0
+  vertical_fov_deg: 30.0
+  points_per_second: 30000
+  sensor_tick: 0.05
+  bev:
+    enabled: true
+    front_m: 36.0
+    rear_m: 12.0
+    left_m: 12.0
+    right_m: 12.0
+    resolution_m: 0.25
+    max_points_per_cell: 5.0
+    save_npz: true
+    log_subdir: rsu_radar/bev_rsu
+    ego_warp:
+      enabled: true
+      save_npz: true
+      log_subdir: rsu_radar/bev_ego
+  pose:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    roll: 0.0
+    pitch: 0.0
+    yaw: -90.0
+  logging:
+    enabled: true
+    subdir: rsu_radar
+    filename: raw_radar.jsonl
+radar_oracle:
+  enabled: true
+  safety_override:
+    enabled: false
+    prediction_horizon_s: 4.0
+    longitudinal_margin_m: 1.0
+    lateral_margin_m: 0.5
+    brake: 1.0
+  log_subdir: radar_oracle
+legacy_rsu_rain:
+  enabled: false
+stage9b_closed_loop_metadata:
+  method: baseline
+  training_seed: 2029
+  safety_override: false
+  weather_source: explicit_pnp_stage9b_joint_weather_override
+  weather_condition: RF2
+stage9b_joint_weather_override:
+  enabled: true
+  profile: RF2

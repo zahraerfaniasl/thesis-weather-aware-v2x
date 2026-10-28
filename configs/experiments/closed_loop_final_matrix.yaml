@@ -1,0 +1,30 @@
+schema_version: 1
+experiment_name: stage9b_final_closed_loop_matrix
+stage: final_closed_loop
+selection_source: configs/experiments/offline_screening_matrix.yaml
+methods:
+- baseline
+- density
+weather_conditions:
+- 'OFF'
+- RF2
+- RF3
+offline_only_weather_conditions:
+- RF1
+training_seed: 2029
+configuration_families:
+- '8_10'
+- '5_10'
+- '5_50'
+route_part_mapping:
+  1s: '8_10'
+  2s: '5_10'
+  3s: '5_10'
+  4s: '8_10'
+  5s: '5_50'
+packaged_configuration_count: 18
+configuration_count_formula: 2 methods x 3 weather conditions x 3 configuration families
+related_directories:
+  closed_loop_configs: configs/closed_loop
+  weather_configs: configs/weather
+  radar_configs: configs/radar

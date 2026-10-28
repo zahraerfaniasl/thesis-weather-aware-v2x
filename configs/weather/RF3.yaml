@@ -1,0 +1,15 @@
+# Final Stage-9b joint-weather condition: RF3.
+
+adverse_weather:
+  enabled: false
+  base_seed: 2026
+  severity: 1.0
+
+stage9b_joint_weather:
+  enabled: true
+  manifest_path: "src/weather_augmentation/tables/manifest.json"
+  profile: RF3
+  pmin: 2.25e-05
+  beta0: 3.1830988618379064e-07
+  base_seed: 2026
+  seed_policy: content_role_v1

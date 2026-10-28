@@ -1,0 +1,80 @@
+schema_version: 1
+experiment_name: stage9b_offline_screening
+stage: offline_screening
+purpose: Select the radar-fusion method for final closed-loop evaluation.
+design:
+  reference_method: baseline
+  candidate_methods:
+  - density
+  - density_doppler
+  - density_doppler_gate
+  weather_conditions:
+  - 'OFF'
+  - RF1
+  - RF2
+  - RF3
+  method_count: 4
+  weather_condition_count: 4
+  total_evaluations: 16
+methods:
+  baseline:
+    display_name: Baseline (No Fusion)
+    radar_fusion_mode: none
+    role: reference
+  density:
+    display_name: Density
+    radar_fusion_mode: density
+    role: candidate
+  density_doppler:
+    display_name: Density + Doppler
+    radar_fusion_mode: density_doppler
+    role: candidate
+  density_doppler_gate:
+    display_name: Density + Doppler + Gate
+    radar_fusion_mode: density_doppler_gate
+    role: candidate
+matrix:
+  baseline:
+    'OFF': completed
+    RF1: completed
+    RF2: completed
+    RF3: completed
+  density:
+    'OFF': completed
+    RF1: completed
+    RF2: completed
+    RF3: completed
+  density_doppler:
+    'OFF': completed
+    RF1: completed
+    RF2: completed
+    RF3: completed
+  density_doppler_gate:
+    'OFF': completed
+    RF1: completed
+    RF2: completed
+    RF3: completed
+evaluation_protocol:
+  score_threshold: 0.2
+  iou_thresholds:
+  - 0.3
+  - 0.5
+  - 0.7
+  classes:
+  - id: 0
+    name: Vehicle
+  - id: 1
+    name: Pedestrian
+  - id: 3
+    name: Bicycle
+  fusion_method: intermediate
+  checkpoint_identifier: net_epoch1.pth
+  seed: 2029
+selection:
+  selected_candidate: density
+  baseline_retained_as_reference: true
+  advanced_to_closed_loop:
+  - baseline
+  - density
+  reported_outcome: Density was the only converged radar candidate and was selected
+    for final closed-loop evaluation alongside the baseline.

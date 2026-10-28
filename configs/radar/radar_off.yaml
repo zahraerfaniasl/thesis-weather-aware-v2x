@@ -1,0 +1,22 @@
+schema_version: 1
+configuration_name: stage9b_radar_off
+method: baseline
+perception:
+  radar_fusion:
+    mode: none
+    fusion_type: additive
+  stage9b_online_radar: false
+  consumes_radar_feature: false
+closed_loop:
+  rsu_radar_capture: true
+  sensor_parameters: configs/radar/radar_sensor_parameters.yaml
+  purposes:
+  - raw_logging
+  - bev_generation
+  - oracle_monitoring
+radar_oracle:
+  enabled: true
+  safety_override_enabled: false
+provenance:
+  model_config_identifier: stage9b_confirm3_baseline_seed2029
+  training_seed: 2029

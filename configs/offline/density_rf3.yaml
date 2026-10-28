@@ -1,0 +1,71 @@
+schema_version: 1
+experiment:
+  name: stage9b_offline_density_rf3
+  method: density
+  weather_condition: RF3
+  training_seed: 2029
+paths:
+  v2xverse_root: ${V2XVERSE_ROOT}
+  dataset_index: ${V2XVERSE_ROOT}/results/stage9b7_index/val
+  model_directory: ${V2XVERSE_ROOT}/opencood/logs/stage9b_confirm3_density_seed2029_2026_09_15_02_38_03
+  checkpoint: ${V2XVERSE_ROOT}/opencood/logs/stage9b_confirm3_density_seed2029_2026_09_15_02_38_03/net_epoch1.pth
+model:
+  identifier: stage9b_confirm3_density_seed2029_2026_09_15_02_38_03
+  checkpoint_identifier: net_epoch1.pth
+  checkpoint_selection: explicit_branch_validation_checkpoint
+  fusion_method: intermediate
+  label_type: lidar
+  multi_class: true
+dataset:
+  split: val
+  index_identifier: stage9b7_index/val
+  classes:
+  - name: Vehicle
+    class_id: 0
+  - name: Pedestrian
+    class_id: 1
+  - name: Bicycle
+    class_id: 3
+preprocessing:
+  core_method: SpVoxelPreprocessor
+  cav_lidar_range:
+  - -36
+  - -12
+  - -22
+  - 36
+  - 12
+  - 14
+  voxel_size:
+  - 0.125
+  - 0.125
+  - 36
+  max_points_per_voxel: 32
+  max_voxel_train: 32000
+  max_voxel_test: 70000
+postprocessing:
+  core_method: VoxelPostprocessor
+  score_threshold: 0.2
+  nms_threshold: 0.15
+  maximum_predictions: 100
+  box_dimension_order: hwl
+evaluation:
+  entrypoint: opencood/tools/inference_stage9b_validation.py
+  fusion_method: intermediate
+  iou_thresholds:
+  - 0.3
+  - 0.5
+  - 0.7
+  metric: average_precision
+  output_file: AP030507.yaml
+weather:
+  config: configs/weather/RF3.yaml
+  enabled: true
+  profile: RF3
+  seed_policy: content_role_v1
+radar:
+  mode: density
+  fusion_type: additive
+provenance:
+  source_model_config: ${V2XVERSE_ROOT}/opencood/logs/stage9b_confirm3_density_seed2029_2026_09_15_02_38_03/config.yaml
+  validation_driver: scripts/stage9b_validate_branches.py
+  checkpoint_policy: branch net_epoch1.pth

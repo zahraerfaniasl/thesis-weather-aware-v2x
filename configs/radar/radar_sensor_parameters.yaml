@@ -1,0 +1,47 @@
+schema_version: 1
+configuration_name: stage9b_rsu_radar_sensor_parameters
+scope: final_stage9b_closed_loop_agent_configs
+rsu_radar:
+  enabled: true
+  range_m: 100.0
+  horizontal_fov_deg: 120.0
+  vertical_fov_deg: 30.0
+  points_per_second: 30000
+  sensor_tick: 0.05
+  pose:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    roll: 0.0
+    pitch: 0.0
+    yaw: -90.0
+  bev:
+    enabled: true
+    front_m: 36.0
+    rear_m: 12.0
+    left_m: 12.0
+    right_m: 12.0
+    resolution_m: 0.25
+    max_points_per_cell: 5.0
+    save_npz: true
+    log_subdir: rsu_radar/bev_rsu
+    ego_warp:
+      enabled: true
+      save_npz: true
+      log_subdir: rsu_radar/bev_ego
+  logging:
+    enabled: true
+    subdir: rsu_radar
+    filename: raw_radar.jsonl
+radar_oracle:
+  enabled: true
+  log_subdir: radar_oracle
+  safety_override:
+    enabled: false
+    prediction_horizon_s: 4.0
+    longitudinal_margin_m: 1.0
+    lateral_margin_m: 0.5
+    brake: 1.0
+model_runtime:
+  stage9b_online_radar: false
+  explanation: This model flag does not disable closed-loop RSU radar capture.
