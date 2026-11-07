@@ -1,14 +1,22 @@
 # Stage-9b Offline Evaluation Configurations
 
-This directory contains the six portable configurations for the final
-Stage-9b offline evaluation matrix.
+This directory contains six portable offline configurations for the
+`confirm3` Baseline and Density models.
+
+Results for these models were located only for OFF and RF3, on the Town04
+validation split and the seven-route Town05 test subset. No `confirm3`
+result was located for RF2, so the two RF2 files are marked
+`evaluation_status: no_confirm3_result_located`.
+
+The four-method screening used different models. See
+`configs/experiments/README.md`.
 
 ## Evaluation matrix
 
 | Method | OFF | RF2 | RF3 |
 |---|---:|---:|---:|
-| Baseline | Yes | Yes | Yes |
-| Radar density | Yes | Yes | Yes |
+| Baseline | Result located | Configuration only | Result located |
+| Radar density | Result located | Configuration only | Result located |
 
 ## Evaluation protocol
 
@@ -19,7 +27,7 @@ The audited evaluation protocol uses:
 - validation split: `results/stage9b7_index/val`;
 - fusion method: `intermediate`;
 - training seed: `2029`;
-- checkpoint policy: branch `net_epoch1.pth`.
+- checkpoint: `net_epoch3.pth`.
 
 The classes evaluated by the Stage-9b multiclass inference script are:
 
@@ -49,15 +57,20 @@ The density model identifier is:
 
 `stage9b_confirm3_density_seed2029_2026_09_15_02_38_03`
 
-The final validation drivers explicitly select `net_epoch1.pth`.
+The `confirm3` offline evaluation used `net_epoch3.pth`. The closed-loop
+agent did not use this file: it loaded `net_epoch_bestval_at1.pth`, as the
+run logs confirm (`resuming best validation model at epoch 1`). Offline and
+closed-loop results therefore come from different checkpoints of the same
+training run.
+
 Checkpoint binaries are not copied into this repository.
 
 Portable paths use the `V2XVERSE_ROOT` environment variable.
 
 ## Weather
 
-Each method is evaluated under OFF, RF2, and RF3. The weather definitions
-are stored in `configs/weather/`.
+The configurations cover OFF, RF2, and RF3. The weather definitions are
+stored in `configs/weather/`.
 
 OFF retains RF2 only as an inactive fallback profile; joint weather is
 disabled in that condition.

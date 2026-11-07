@@ -10,7 +10,13 @@ This directory contains the portable weather configurations used by the final St
 | RF2 | Yes | RF2 | 50 mm/h | 0.06 1/m | 0.004314408151764052 1/m | 0.06431440815176405 1/m | 0.000921310633919122 |
 | RF3 | Yes | RF3 | 50 mm/h | 0.20 1/m | 0.004314408151764052 1/m | 0.20431440815176408 1/m | 0.0030710354463970736 |
 
-RF2 and RF3 use the same rain rate. RF3 represents the stronger condition because its fog extinction and fog backscatter are substantially higher.
+RF2 and RF3 use the same rain rate. RF3 has higher nominal fog extinction and fog backscatter.
+
+## Known limitation of the final run
+
+These settings did not degrade the LiDAR in the closed-loop run as intended. The traces show `lost=0` and `fog=0`. The LiDAR range in that run was 12 m, and with `pmin = 2.25e-05` the modelled effective range was above 12 m, so no point fell below the detection threshold. The response tables are also not sensor-calibrated (`sensor_calibrated: false` in the manifest).
+
+RF2 and RF3 therefore should not be read as realistic LiDAR degradation. The analysis is in `docs/stage1_summary.md` and `docs/stage1b_summary.md`, and a new weather model is planned.
 
 The OFF configuration keeps `profile: RF2` as an inactive fallback value, but weather augmentation is disabled by `enabled: false`.
 

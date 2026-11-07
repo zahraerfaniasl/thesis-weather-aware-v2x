@@ -11,17 +11,30 @@ Radar operation has two separate layers:
 2. Radar feature fusion in the perception model.
 
 RSU radar capture was enabled for both baseline and density experiments.
-The two methods differ in whether the perception model consumes the radar
-feature.
+The two methods have different perception modes, but radar input reached
+the perception model only in the offline evaluation.
 
-| Configuration | RSU capture | Perception mode | Radar feature consumed |
-|---|---:|---|---:|
-| `radar_off.yaml` | enabled | `none` | no |
-| `radar_density.yaml` | enabled | `density` | yes |
+| Configuration | RSU capture | Perception mode | Radar input offline | Radar input closed loop |
+|---|---:|---|---:|---:|
+| `radar_off.yaml` | enabled | `none` | no | no |
+| `radar_density.yaml` | enabled | `density` | yes | no (see below) |
 
-The `stage9b_online_radar: false` model setting does not mean that the
-closed-loop RSU radar sensor was disabled. Raw radar logging, BEV
-generation, and oracle monitoring remained enabled.
+## Known limitation of the final closed-loop run
+
+The Density model configuration has `stage9b_online_radar: false`. With
+this setting, the closed-loop path filled neither `radar_path` nor the
+online radar packet, so the `radar_bev` tensor passed to the perception
+model was all zeros at every step.
+
+The RSU radar sensor itself stayed active: raw logging, BEV generation,
+and oracle monitoring all ran. Those outputs were not model inputs.
+
+The final closed-loop Density results are therefore **not an evaluation of
+radar fusion**. They compare two differently trained checkpoints.
+
+This conclusion comes from the code and configuration. Radar input tracing
+was not active in that run, so it still needs a trace-based check on the
+server.
 
 ## Radar oracle
 
@@ -44,5 +57,10 @@ Important values include:
 - BEV resolution: 0.25 m;
 - BEV extents: 36 m front, 12 m rear, 12 m left, and 12 m right;
 - maximum points per BEV cell: 5.
+
+These parameters describe the final Stage-9b run. Its radar was mounted with
+pitch 0 and a fixed yaw of -90 degrees. An analysis after the run estimated
+that this mounting covers about 13% of the ego BEV
+(`docs/stage2_summary.md`), so the radar design is being revised.
 
 All paths in these files are repository-relative.

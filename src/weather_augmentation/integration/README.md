@@ -48,6 +48,11 @@ under OFF, RF2, and RF3 weather conditions.
 
 Model-directory placeholders must be replaced before execution.
 
+## Patch base
+
+The patches apply to the thesis working tree, not to a clean V2Xverse
+checkout. See `src/integration/README.md`.
+
 ## Reproducibility
 
 Table hashes, profile loading, deterministic seeds, role-specific

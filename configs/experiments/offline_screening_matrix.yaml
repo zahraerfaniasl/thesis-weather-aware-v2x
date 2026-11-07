@@ -68,13 +68,18 @@ evaluation_protocol:
   - id: 3
     name: Bicycle
   fusion_method: intermediate
-  checkpoint_identifier: net_epoch1.pth
-  seed: 2029
+  validation_split: town04_six_routes
+  training_weather: 'OFF'
+  model_family: stage9b_clean_pilot_20260912
+  checkpoint_identifier: not_recorded_in_manifest
+  seed: not_recorded_in_manifest
 selection:
   selected_candidate: density
   baseline_retained_as_reference: true
   advanced_to_closed_loop:
   - baseline
   - density
-  reported_outcome: Density was the only converged radar candidate and was selected
-    for final closed-loop evaluation alongside the baseline.
+  selection_basis: Highest mAP@0.3 and mAP@0.5 among the four methods under
+    OFF, RF1, RF2, and RF3 on the Town04 validation split.
+  selection_limitation: Density was not the best method at mAP@0.7 under OFF,
+    RF1, or RF2.

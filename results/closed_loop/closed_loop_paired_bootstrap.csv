@@ -1,0 +1,7 @@
+weather,metric,paired_jobs,density_minus_baseline,ci95_low,ci95_high,bootstrap_iterations,bootstrap_seed
+OFF,driving_score,73,-7.4,-14.66,0.16,5000,2029
+OFF,route_completion,73,-4.5,-10.07,0.69,5000,2029
+RF2,driving_score,73,-8.45,-14.4,-2.4,5000,2029
+RF2,route_completion,73,0.2,-3.97,4.32,5000,2029
+RF3,driving_score,73,-7.23,-14.5,0.43,5000,2029
+RF3,route_completion,73,-6.46,-11.44,-1.93,5000,2029

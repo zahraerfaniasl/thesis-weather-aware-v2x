@@ -7,7 +7,9 @@ perception:
     fusion_type: additive
     representation: normalized_density
   stage9b_online_radar: false
-  consumes_radar_feature: true
+  consumes_radar_feature_offline: true
+  consumes_radar_feature_closed_loop: false
+  closed_loop_radar_status: inferred_from_code_and_config_not_trace_verified
 closed_loop:
   rsu_radar_capture: true
   sensor_parameters: configs/radar/radar_sensor_parameters.yaml

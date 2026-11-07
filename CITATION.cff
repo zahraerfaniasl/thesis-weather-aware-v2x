@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you refer to this work, please cite it as below."
+title: "Weather-Aware V2X Cooperative Perception"
+type: software
+authors:
+  - family-names: "Erfani Asl"
+    given-names: "Zahra"
+repository-code: "https://github.com/zahraerfaniasl/thesis-weather-aware-v2x"
+version: "stage9b"
+keywords:
+  - cooperative perception
+  - V2X
+  - radar
+  - LiDAR
+  - adverse weather
+  - vulnerable road users
+references:
+  - type: article
+    title: "Towards Collaborative Autonomous Driving: Simulation Platform and End-to-End System"
+    authors:
+      - family-names: "Liu"
+        given-names: "Genjia"
+      - family-names: "Hu"
+        given-names: "Yue"
+      - family-names: "Xu"
+        given-names: "Chenxin"
+      - family-names: "Mao"
+        given-names: "Weibo"
+      - family-names: "Ge"
+        given-names: "Junhao"
+      - family-names: "Huang"
+        given-names: "Zhengxiang"
+      - family-names: "Lu"
+        given-names: "Yifan"
+      - family-names: "Xu"
+        given-names: "Yinda"
+      - family-names: "Xia"
+        given-names: "Junkai"
+      - family-names: "Wang"
+        given-names: "Yafei"
+      - name: "and others"
+    journal: "arXiv preprint arXiv:2404.09496"
+    year: 2024
