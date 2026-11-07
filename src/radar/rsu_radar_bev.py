@@ -9,13 +9,7 @@ class RSURadarBEVLogger(object):
     Build and log a two-channel Radar BEV in the local RSU frame.
 
     Input radar column layout:
-
-
-$$
-range_m, azimuth_rad, elevation_rad, radial_velocity_mps
-$$
-
-
+        [range_m, azimuth_rad, elevation_rad, radial_velocity_mps]
 
     Output radar_bev layout:
         channel 0: normalized point density
@@ -133,14 +127,7 @@ $$
         Parameters
         ----------
         radar_points : numpy.ndarray
-            Shape N x 4:
-
-
-$$
-range, azimuth, elevation, radial_velocity
-$$
-
-
+            Shape N x 4: [range, azimuth, elevation, radial_velocity].
 
         Returns
         -------

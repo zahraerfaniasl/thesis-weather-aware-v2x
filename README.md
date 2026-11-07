@@ -26,6 +26,10 @@ Two cooperative perception models are compared. Both use the
 - **Density:** cooperative LiDAR plus RSU radar density. The radar BEV is
   warped into the ego frame and fused additively.
 
+Density + Doppler and Density + Doppler + Gate were also screened offline on
+Town04. Density was carried forward, so later results cover only the two
+models above.
+
 Weather conditions are `OFF`, `RF2` (rain 50 mm/h, fog 0.06 1/m), and `RF3`
 (rain 50 mm/h, fog 0.20 1/m).
 

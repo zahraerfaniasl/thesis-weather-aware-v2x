@@ -9,6 +9,8 @@ These documents are in Persian.
 | `stage1b_summary.md` | Return to an 85 m LiDAR and recalibration |
 | `stage2_summary.md` | Why radar did not reach the model, and the radar coverage analysis |
 
-The stage summaries were written after the final Stage-9b run. They describe
-fixes on development branches that are **not** part of this repository yet
-and have not been validated with a new closed-loop run.
+The method document describes the Stage-9b design. The stage summaries are
+development reports written after the final run. They name code, branches,
+scripts, and output files that are **not** in this repository, and their fixes
+have not been validated with a new closed-loop run. The code and configs here
+show the final Stage-9b state, for example `pmin = 2.25e-05` and a 12 m LiDAR.

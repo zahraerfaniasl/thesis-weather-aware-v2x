@@ -5,22 +5,9 @@ import numpy as np
 
 def polar_radar_to_cartesian(radar_points):
     """
-    Convert CARLA Radar:
-
-
-$$
-range, azimuth, elevation, radial_velocity
-$$
-
-
-    to:
-
-
-$$
-x, y, z, radial_velocity
-$$
-
-
+    Convert CARLA radar rows from
+    [range, azimuth, elevation, radial_velocity] to
+    [x, y, z, radial_velocity].
     """
     points = np.asarray(radar_points, dtype=np.float32)
 
@@ -61,8 +48,8 @@ def encode_radar_bev(
         channel 2: normalized maximum absolute Doppler
         channel 3: occupied-cell mask
 
-    The first spatial dimension corresponds to X.
-    The second spatial dimension corresponds to Y.
+    H follows Y (rows) and W follows X (columns).
+    Perception consumes channels 0-2. Channel 3 is not a model input.
     """
     x_min, x_max = map(float, x_range)
     y_min, y_max = map(float, y_range)
@@ -256,14 +243,7 @@ def load_and_encode_radar_to_ego(path, ego_pose, **kwargs):
     Load RSU Radar, transform radar-local coordinates to world,
     then world coordinates to the Ego model frame.
 
-    ego_pose format:
-
-
-$$
-x, y, z, roll_deg, yaw_deg, pitch_deg
-$$
-
-
+    ego_pose format: [x, y, z, roll_deg, yaw_deg, pitch_deg].
     """
     with np.load(str(path), allow_pickle=False) as data:
         available = bool(data["radar_packet_available"])
