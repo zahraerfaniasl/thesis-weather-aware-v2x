@@ -25,3 +25,14 @@ were not run again.
 
 The closed-loop matrix also calls `scripts/batch_eval_driving_e2e.sh` from
 V2Xverse. That file is not copied here.
+
+## Subfolders
+
+| Folder | Contents |
+|---|---|
+| [`closed_loop/`](closed_loop/README.md) | Portable closed-loop runners and job audit |
+| [`offline/`](offline/README.md) | Portable offline runners, matrix audit, and metric extraction |
+| `audit/` | Entry point for the closed-loop result audit |
+
+`closed_loop/run_final_matrix.sh` is a portable version of the same matrix as
+`stage9b_run_final_matrix_20260917.sh`, which is kept as the historical driver.
