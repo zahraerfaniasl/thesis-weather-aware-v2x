@@ -20,6 +20,16 @@ The closed-loop agent integration uses:
 The agent also uses `oracle/rsu_radar_oracle.py` for idealized reference
 observation and logging.
 
+## Status
+
+In the final closed-loop run, the Density perception model received an
+all-zero radar input, because `stage9b_online_radar` was `false`. The closed-loop
+modules below produced logs and monitoring outputs only. See
+`configs/radar/README.md`.
+
+The modules import `opencood.data_utils.radar.*`, so they do not run on their
+own. They are placed in that package of a V2Xverse tree.
+
 ## Files
 
 - `radar_bev.py`: converts radar measurements into BEV representations.
@@ -45,17 +55,14 @@ modify the vehicle control commands.
 
 ## Integration files
 
-The following integration files are not duplicated in this directory and
-will be documented separately under `src/integration/` or `patches/`:
-
-- `opencood/data_utils/datasets/intermediate_multiclass_fusion_dataset.py`
-- `simulation/leaderboard/team_code/pnp_agent_e2e.py`
+The upstream files that call these modules are not duplicated here. They are
+listed in `src/integration/README.md`.
 
 ## Upstream project
 
-These modules were copied or adapted from the thesis working tree based on
-V2Xverse/OpenCOOD. Third-party components remain subject to their original
-licenses. See `THIRD_PARTY_NOTICES.md`.
+These modules come from the thesis working tree based on V2Xverse/OpenCOOD
+and do not exist in upstream V2Xverse. Third-party components remain subject
+to their original licenses. See `THIRD_PARTY_NOTICES.md`.
 
 The modules require a compatible V2Xverse installation. See `environment/`
 and the repository installation instructions.

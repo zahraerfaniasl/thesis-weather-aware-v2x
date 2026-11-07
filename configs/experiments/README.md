@@ -23,8 +23,14 @@ Each method was evaluated under `OFF`, `RF1`, `RF2`, and `RF3`.
 Baseline was the reference method. The other three methods were radar
 fusion candidates.
 
-Density was reported as the only converged radar candidate. It was
-selected for final closed-loop evaluation alongside the baseline.
+All four methods completed training and all sixteen evaluations. Density
+was selected because it had the highest mAP@0.3 and mAP@0.5 under every
+weather condition. It was not the best method at mAP@0.7 under OFF, RF1,
+or RF2.
+
+The screening used the `stage9b_clean_*_pilot_20260912` models on the
+six-route Town04 validation split. Its manifest records no training seed
+or checkpoint file name. These are not the `confirm3` models used later.
 
 The complete sixteen-cell design is recorded in
 `offline_screening_matrix.yaml`.
@@ -55,6 +61,13 @@ There are eighteen unique packaged closed-loop configurations:
 RF1 was used during offline screening but was not included in the final
 closed-loop weather matrix.
 
+Each cell has 85 jobs over 58 unique route IDs. The summaries count 73 jobs
+per cell: the same 12 jobs have no ego-level result record in all six cells.
+
+The closed-loop agent loaded `net_epoch_bestval_at1.pth`. The Density
+perception input from radar was all zeros in this run, so these results do
+not evaluate radar fusion. See `configs/radar/README.md`.
+
 ## Configuration availability
 
 The repository contains operational offline configurations for the final
@@ -64,5 +77,5 @@ Separate operational YAML files for every cell of the earlier screening
 matrix are not reproduced because their exact audited source variants
 have not been packaged. No missing parameter values were guessed.
 
-This directory records the verified experimental design and selection
-decision without inventing numerical results.
+This directory records the experimental design and selection decision.
+The numerical results are stored in `results/`.

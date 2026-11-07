@@ -6,7 +6,8 @@ perception:
     mode: none
     fusion_type: additive
   stage9b_online_radar: false
-  consumes_radar_feature: false
+  consumes_radar_feature_offline: false
+  consumes_radar_feature_closed_loop: false
 closed_loop:
   rsu_radar_capture: true
   sensor_parameters: configs/radar/radar_sensor_parameters.yaml

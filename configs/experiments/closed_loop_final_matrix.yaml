@@ -22,6 +22,13 @@ route_part_mapping:
   3s: '5_10'
   4s: '8_10'
   5s: '5_50'
+perception_checkpoint: net_epoch_bestval_at1.pth
+jobs_per_cell: 85
+counted_jobs_per_cell: 73
+excluded_jobs_per_cell: 12
+exclusion_reason: no ego-level result record; same 12 jobs in all six cells
+unique_route_ids: 58
+density_radar_input_status: all zeros by code and configuration; not trace verified
 packaged_configuration_count: 18
 configuration_count_formula: 2 methods x 3 weather conditions x 3 configuration families
 related_directories:

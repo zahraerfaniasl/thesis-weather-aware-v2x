@@ -15,6 +15,15 @@ All 18 configurations use training seed `2029` and cover the confirmed `8_10`, `
 
 All three families are included because they were used by the final five-part batch evaluation.
 
+## Status of these results
+
+- The perception checkpoint was `net_epoch_bestval_at1.pth`.
+- The Density radar input to the perception model was all zeros, so these
+  runs do not evaluate radar fusion. See `../radar/README.md`.
+- Joint weather removed no LiDAR points. See `../weather/README.md`.
+- Each cell has 85 jobs. The summaries count 73, because the same 12 jobs
+  have no ego-level result record in all six cells.
+
 ## Five-part batch mapping
 
 | Evaluation part | Configuration family |
@@ -58,6 +67,8 @@ The legacy `legacy_rsu_rain` mechanism is disabled in all six configurations to 
 ## Portability and provenance
 
 The configurations contain no original machine-specific V2Xverse paths.
+`src/weather_augmentation/tables/manifest.provenance.json` keeps the original
+server paths on purpose, as a provenance record.
 
 Original source filenames and SHA-256 hashes are recorded in `SOURCE_CONFIG_SHA256SUMS.txt`.
 

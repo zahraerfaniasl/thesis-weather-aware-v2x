@@ -8,11 +8,11 @@ paths:
   v2xverse_root: ${V2XVERSE_ROOT}
   dataset_index: ${V2XVERSE_ROOT}/results/stage9b7_index/val
   model_directory: ${V2XVERSE_ROOT}/opencood/logs/stage9b_confirm3_baseline_seed2029_2026_09_14_18_47_05
-  checkpoint: ${V2XVERSE_ROOT}/opencood/logs/stage9b_confirm3_baseline_seed2029_2026_09_14_18_47_05/net_epoch1.pth
+  checkpoint: ${V2XVERSE_ROOT}/opencood/logs/stage9b_confirm3_baseline_seed2029_2026_09_14_18_47_05/net_epoch3.pth
 model:
   identifier: stage9b_confirm3_baseline_seed2029_2026_09_14_18_47_05
-  checkpoint_identifier: net_epoch1.pth
-  checkpoint_selection: explicit_branch_validation_checkpoint
+  checkpoint_identifier: net_epoch3.pth
+  checkpoint_selection: explicit_confirm3_evaluation_checkpoint
   fusion_method: intermediate
   label_type: lidar
   multi_class: true
@@ -67,5 +67,6 @@ radar:
   fusion_type: additive
 provenance:
   source_model_config: ${V2XVERSE_ROOT}/opencood/logs/stage9b_confirm3_baseline_seed2029_2026_09_14_18_47_05/config.yaml
-  validation_driver: scripts/stage9b_validate_branches.py
-  checkpoint_policy: branch net_epoch1.pth
+  validation_driver: inference_final_test.py (server results folder; not packaged)
+  checkpoint_policy: confirm3 net_epoch3.pth
+  evaluation_status: no_confirm3_result_located

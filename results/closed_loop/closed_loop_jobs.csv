@@ -1,0 +1,439 @@
+method,weather,job,driving_score,route_completion,status,collisions_pedestrian,collisions_vehicle,collisions_layout,vehicle_blocked,stop_infraction,outside_route_lanes
+baseline,OFF,r10_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r12_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r12_repeat0_4_8_10,41.81693560276022,69.69489267126703,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,OFF,r135_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r136_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r138_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r13_repeat0_1_8_10,10.503803936758246,29.177233157661792,Failed - Agent got blocked,0,2,0,1,0,0
+baseline,OFF,r140_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r142_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r145_repeat0_4_8_10,18.03490408785994,30.058173479766566,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,OFF,r145_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r146_repeat0_1_8_10,6.8974259564296405,31.93252757606315,Failed - Agent got blocked,0,3,0,1,0,0
+baseline,OFF,r146_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r147_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r14_repeat0_4_8_10,30.0,100.0,Completed,1,1,0,0,0,0
+baseline,OFF,r157_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r15_repeat0_4_8_10,30.0,100.0,Completed,1,1,0,0,0,0
+baseline,OFF,r16_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r16_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r18_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r18_repeat0_5_5_50,40.276806631738246,67.12801105289708,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,OFF,r19_repeat0_2_5_10,1.822552519031424,3.03758753171904,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,OFF,r1_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r1_repeat0_5_5_50,21.087290628635472,35.14548438105912,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,OFF,r20_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r22_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r24_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r25_repeat0_2_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,OFF,r28_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r28_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r2_repeat0_1_8_10,21.6,100.0,Completed,0,3,0,0,0,0
+baseline,OFF,r2_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r300_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r300_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r300_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,OFF,r301_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r305_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,OFF,r306_repeat0_5_5_50,56.69448133893955,94.49080223156592,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,OFF,r310_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r310_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,OFF,r310_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r311_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,OFF,r311_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r312_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r313_repeat0_3_5_10,21.6,100.0,Completed,0,3,0,0,0,0
+baseline,OFF,r314_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r315_repeat0_5_5_50,34.06954706518065,56.78257844196775,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,OFF,r316_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r317_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r318_repeat0_5_5_50,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,OFF,r31_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r31_repeat0_3_5_10,4.6655999999999995,100.0,Completed,0,6,0,0,0,0
+baseline,OFF,r31_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r320_repeat0_2_5_10,9.0,100.0,Completed,2,2,0,0,0,0
+baseline,OFF,r320_repeat0_3_5_10,7.5,100.0,Completed,3,1,0,0,0,0
+baseline,OFF,r321_repeat0_2_5_10,23.4,100.0,Completed,0,2,1,0,0,0
+baseline,OFF,r321_repeat0_4_8_10,15.31036354000032,70.88131268518667,Failed - Agent got blocked,0,3,0,1,0,0
+baseline,OFF,r322_repeat0_2_5_10,30.0,100.0,Completed,1,1,0,0,0,0
+baseline,OFF,r323_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r324_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r326_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r327_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r328_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r328_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r329_repeat0_2_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,OFF,r329_repeat0_3_5_10,80.0,100.0,Completed,0,0,0,0,1,0
+baseline,OFF,r330_repeat0_3_5_10,5.0544,100.0,Completed,0,5,1,0,0,0
+baseline,OFF,r331_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r331_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,OFF,r3_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r3_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r5_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,OFF,r9_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r10_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r12_repeat0_2_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF2,r12_repeat0_4_8_10,40.76298912928022,67.93831521546704,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF2,r135_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r136_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r138_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r13_repeat0_1_8_10,10.503803936758246,29.177233157661792,Failed - Agent got blocked,0,2,0,1,0,0
+baseline,RF2,r140_repeat0_4_8_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF2,r142_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r145_repeat0_4_8_10,17.2880072460849,28.8133454101415,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF2,r145_repeat0_5_5_50,21.6,100.0,Completed,0,3,0,0,0,0
+baseline,RF2,r146_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r146_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r147_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r14_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r157_repeat0_5_5_50,2.7993599999999996,100.0,Completed,0,7,0,0,0,0
+baseline,RF2,r15_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r16_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r16_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r18_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r18_repeat0_5_5_50,8.997665287743839,69.42642968938148,Failed - Agent got blocked,0,4,0,1,0,0
+baseline,RF2,r19_repeat0_2_5_10,2.2389809286369866,3.731634881061644,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF2,r1_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r1_repeat0_5_5_50,21.087290628635472,35.14548438105912,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF2,r20_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r22_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r24_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r25_repeat0_2_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF2,r28_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r28_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r2_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r2_repeat0_2_5_10,18.0,100.0,Completed,1,2,0,0,0,0
+baseline,RF2,r300_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r300_repeat0_2_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF2,r300_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r301_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF2,r305_repeat0_3_5_10,5.040802138991223,93.34818775909673,Failed - Agent got blocked,2,3,0,1,0,0
+baseline,RF2,r306_repeat0_5_5_50,48.0,100.0,Completed,0,1,0,0,1,0
+baseline,RF2,r310_repeat0_1_8_10,31.38102221778102,52.3017036963017,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF2,r310_repeat0_3_5_10,21.6,100.0,Completed,0,3,0,0,0,0
+baseline,RF2,r310_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r311_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r311_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r312_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r313_repeat0_3_5_10,43.867262477619555,73.11210412936593,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF2,r314_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r315_repeat0_5_5_50,34.06954706518065,56.78257844196775,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF2,r316_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r317_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r318_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r31_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r31_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r31_repeat0_5_5_50,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF2,r320_repeat0_2_5_10,4.206149358073383,28.040995720489224,Failed - Agent got blocked,2,1,0,1,0,0
+baseline,RF2,r320_repeat0_3_5_10,12.5,100.0,Completed,3,0,0,0,0,0
+baseline,RF2,r321_repeat0_2_5_10,3.73248,100.0,Completed,0,6,0,0,1,0
+baseline,RF2,r321_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r322_repeat0_2_5_10,5.8045231278283556,33.59099032308076,Failed - Agent got blocked,0,3,0,1,1,0
+baseline,RF2,r323_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r324_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r326_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r327_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r328_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r328_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r329_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r329_repeat0_3_5_10,48.0,100.0,Completed,0,1,0,0,1,0
+baseline,RF2,r330_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r331_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r331_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF2,r3_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r3_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r5_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF2,r9_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r10_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r12_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF3,r12_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r135_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r136_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r138_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r13_repeat0_1_8_10,10.503803936758246,29.177233157661792,Failed - Agent got blocked,0,2,0,1,0,0
+baseline,RF3,r140_repeat0_4_8_10,14.563289153386913,24.27214858897819,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF3,r142_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r145_repeat0_4_8_10,16.541110404309862,27.568517340516436,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF3,r145_repeat0_5_5_50,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF3,r146_repeat0_1_8_10,65.0,100.0,Completed,0,0,1,0,0,0
+baseline,RF3,r146_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF3,r147_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r14_repeat0_4_8_10,4.581904870830891,12.727513530085808,Failed - Agent got blocked,0,2,0,1,0,0
+baseline,RF3,r157_repeat0_5_5_50,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF3,r15_repeat0_4_8_10,4.581904870830891,12.727513530085808,Failed - Agent got blocked,0,2,0,1,0,0
+baseline,RF3,r16_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r16_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r18_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r18_repeat0_5_5_50,39.68592698371579,66.14321163952631,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF3,r19_repeat0_2_5_10,1.822552519031424,3.03758753171904,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF3,r1_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF3,r1_repeat0_5_5_50,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF3,r20_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF3,r22_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r24_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF3,r25_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r28_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r28_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r2_repeat0_1_8_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF3,r2_repeat0_2_5_10,25.28791065168327,42.14651775280545,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF3,r300_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF3,r300_repeat0_2_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF3,r300_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+baseline,RF3,r301_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF3,r305_repeat0_3_5_10,21.6,100.0,Completed,0,3,0,0,0,0
+baseline,RF3,r306_repeat0_5_5_50,7.776,100.0,Completed,0,5,0,0,0,0
+baseline,RF3,r310_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r310_repeat0_3_5_10,10.8,100.0,Completed,1,3,0,0,0,0
+baseline,RF3,r310_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r311_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF3,r311_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF3,r312_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r313_repeat0_3_5_10,12.959999999999999,100.0,Completed,0,4,0,0,0,0
+baseline,RF3,r314_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r315_repeat0_5_5_50,34.06954706518065,56.78257844196775,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF3,r316_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r317_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r318_repeat0_5_5_50,4.6655999999999995,100.0,Completed,0,6,0,0,0,0
+baseline,RF3,r31_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r31_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r31_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF3,r320_repeat0_2_5_10,5.4,100.0,Completed,2,3,0,0,0,0
+baseline,RF3,r320_repeat0_3_5_10,25.0,100.0,Completed,2,0,0,0,0,0
+baseline,RF3,r321_repeat0_2_5_10,7.776,100.0,Completed,0,5,0,0,0,0
+baseline,RF3,r321_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+baseline,RF3,r322_repeat0_2_5_10,18.732979678824375,31.221632798040623,Failed - Agent got blocked,0,1,0,1,0,0
+baseline,RF3,r323_repeat0_4_8_10,30.0,100.0,Completed,1,1,0,0,0,0
+baseline,RF3,r324_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r326_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r327_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r328_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r328_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r329_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r329_repeat0_3_5_10,8.424,100.0,Completed,0,4,1,0,0,0
+baseline,RF3,r330_repeat0_3_5_10,5.008838324710874,46.378132636211795,Failed - Agent got blocked,1,3,0,1,0,0
+baseline,RF3,r331_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r331_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r3_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r3_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r5_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+baseline,RF3,r9_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r10_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r12_repeat0_2_5_10,30.64820357085962,85.1338988079434,Failed - Agent got blocked,0,2,0,1,0,0
+density,OFF,r12_repeat0_4_8_10,43.50325045032506,72.50541741720843,Failed - Agent got blocked,0,1,0,1,0,0
+density,OFF,r135_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r136_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r138_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r13_repeat0_1_8_10,10.86033115657502,30.167586546041726,Failed - Agent got blocked,0,2,0,1,0,0
+density,OFF,r140_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r142_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r145_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r145_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r146_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r146_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r147_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r14_repeat0_4_8_10,4.701731067677149,13.060364076880969,Failed - Agent got blocked,0,2,0,1,0,0
+density,OFF,r157_repeat0_5_5_50,36.0,100.0,Completed,0,2,0,0,0,0
+density,OFF,r15_repeat0_4_8_10,4.701731067677149,13.060364076880969,Failed - Agent got blocked,0,2,0,1,0,0
+density,OFF,r16_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r16_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r18_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r18_repeat0_5_5_50,39.68592698371579,66.14321163952631,Failed - Agent got blocked,0,1,0,1,0,0
+density,OFF,r19_repeat0_2_5_10,2.1001712113369595,3.500285352228266,Failed - Agent got blocked,0,1,0,1,0,0
+density,OFF,r1_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r1_repeat0_5_5_50,21.087290628635472,35.14548438105912,Failed - Agent got blocked,0,1,0,1,0,0
+density,OFF,r20_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r22_repeat0_2_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,OFF,r24_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r25_repeat0_2_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,OFF,r28_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r28_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r2_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r2_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r300_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r300_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r300_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r301_repeat0_3_5_10,7.86577366462283,86.9627043515634,Failed - Agent got blocked,0,3,2,1,0,1
+density,OFF,r305_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,OFF,r306_repeat0_5_5_50,17.28,100.0,Completed,0,3,0,0,1,0
+density,OFF,r310_repeat0_1_8_10,48.0,100.0,Completed,0,1,0,0,1,0
+density,OFF,r310_repeat0_3_5_10,18.72,100.0,Completed,0,2,1,0,1,0
+density,OFF,r310_repeat0_5_5_50,48.0,100.0,Completed,0,1,0,0,1,0
+density,OFF,r311_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r311_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r312_repeat0_4_8_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,OFF,r313_repeat0_3_5_10,43.867262477619555,73.11210412936593,Failed - Agent got blocked,0,1,0,1,0,0
+density,OFF,r314_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r315_repeat0_5_5_50,34.06954706518065,56.78257844196775,Failed - Agent got blocked,0,1,0,1,0,0
+density,OFF,r316_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r317_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r318_repeat0_5_5_50,36.0,100.0,Completed,0,2,0,0,0,0
+density,OFF,r31_repeat0_1_8_10,26.299644332790187,43.832740554650314,Failed - Agent got blocked,0,1,0,1,0,0
+density,OFF,r31_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r31_repeat0_5_5_50,21.6,100.0,Completed,0,3,0,0,0,0
+density,OFF,r320_repeat0_2_5_10,5.4,100.0,Completed,2,3,0,0,0,0
+density,OFF,r320_repeat0_3_5_10,25.0,100.0,Completed,2,0,0,0,0,0
+density,OFF,r321_repeat0_2_5_10,41.13403510589545,85.69590647061553,Failed - Agent got blocked,0,1,0,1,1,0
+density,OFF,r321_repeat0_4_8_10,48.0,100.0,Completed,0,1,0,0,1,0
+density,OFF,r322_repeat0_2_5_10,5.108776050185244,35.47761145961975,Failed - Agent got blocked,1,2,0,1,1,0
+density,OFF,r323_repeat0_4_8_10,27.23745595066543,45.39575991777572,Failed - Agent got blocked,0,1,0,1,0,0
+density,OFF,r324_repeat0_3_5_10,28.799999999999997,100.0,Completed,0,2,0,0,1,0
+density,OFF,r326_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r327_repeat0_1_8_10,50.0,100.0,Completed,1,0,0,0,0,0
+density,OFF,r328_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r328_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r329_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r329_repeat0_3_5_10,24.187690529507766,67.18802924863269,Failed - Agent got blocked,0,2,0,1,0,0
+density,OFF,r330_repeat0_3_5_10,18.22598674694599,46.73329935114356,Failed - Agent got blocked,0,1,1,1,0,0
+density,OFF,r331_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,OFF,r331_repeat0_4_8_10,28.799999999999997,100.0,Completed,0,2,0,0,1,0
+density,OFF,r3_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r3_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r5_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,OFF,r9_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r10_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r12_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r12_repeat0_4_8_10,24.331320292748018,67.58700081318894,Failed - Agent got blocked,0,2,0,1,0,0
+density,RF2,r135_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r136_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r138_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r13_repeat0_1_8_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF2,r140_repeat0_4_8_10,15.263176933956426,25.43862822326071,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF2,r142_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r145_repeat0_4_8_10,18.781795275788884,31.30299212631481,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF2,r145_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r146_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r146_repeat0_5_5_50,39.0,100.0,Completed,0,1,1,0,0,0
+density,RF2,r147_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r14_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r157_repeat0_5_5_50,5.76,100.0,Completed,2,2,0,0,2,0
+density,RF2,r15_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r16_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r16_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r18_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r18_repeat0_5_5_50,39.68592698371579,66.14321163952631,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF2,r19_repeat0_2_5_10,1.822552519031424,3.03758753171904,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF2,r1_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r1_repeat0_5_5_50,21.087290628635472,35.14548438105912,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF2,r20_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r22_repeat0_2_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF2,r24_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r25_repeat0_2_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF2,r28_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r28_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r2_repeat0_1_8_10,21.6,100.0,Completed,0,3,0,0,0,0
+density,RF2,r2_repeat0_2_5_10,7.776,100.0,Completed,0,5,0,0,0,0
+density,RF2,r300_repeat0_1_8_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF2,r300_repeat0_2_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF2,r300_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF2,r301_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF2,r305_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r306_repeat0_5_5_50,28.799999999999997,100.0,Completed,0,2,0,0,1,0
+density,RF2,r310_repeat0_1_8_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF2,r310_repeat0_3_5_10,50.0,100.0,Completed,1,0,0,0,0,0
+density,RF2,r310_repeat0_5_5_50,23.4,100.0,Completed,0,2,1,0,0,0
+density,RF2,r311_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r311_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r312_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r313_repeat0_3_5_10,43.867262477619555,73.11210412936593,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF2,r314_repeat0_3_5_10,50.0,100.0,Completed,1,0,0,0,0,0
+density,RF2,r315_repeat0_5_5_50,34.06954706518065,56.78257844196775,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF2,r316_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r317_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r318_repeat0_5_5_50,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF2,r31_repeat0_1_8_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF2,r31_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF2,r31_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r320_repeat0_2_5_10,0.972,100.0,Completed,3,5,0,0,0,0
+density,RF2,r320_repeat0_3_5_10,2.51576328800908,27.952925422323112,Failed - Agent got blocked,2,2,0,1,0,0
+density,RF2,r321_repeat0_2_5_10,9.138245181905479,70.51115109494968,Failed - Agent got blocked,0,4,0,1,0,0
+density,RF2,r321_repeat0_4_8_10,21.6,100.0,Completed,0,3,0,0,0,0
+density,RF2,r322_repeat0_2_5_10,5.297980080921778,35.31986720614518,Failed - Agent got blocked,2,1,0,1,0,0
+density,RF2,r323_repeat0_4_8_10,48.0,100.0,Completed,0,1,0,0,1,0
+density,RF2,r324_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r326_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r327_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r328_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r328_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF2,r329_repeat0_2_5_10,80.0,100.0,Completed,0,0,0,0,1,0
+density,RF2,r329_repeat0_3_5_10,28.799999999999997,100.0,Completed,0,2,0,0,1,0
+density,RF2,r330_repeat0_3_5_10,1.5741633726527278,93.72162283835877,Failed - Agent got blocked,0,8,0,1,0,0
+density,RF2,r331_repeat0_3_5_10,21.6,100.0,Completed,0,3,0,0,0,0
+density,RF2,r331_repeat0_4_8_10,80.0,100.0,Completed,0,0,0,0,1,0
+density,RF2,r3_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r3_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r5_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF2,r9_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r10_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r12_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r12_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r135_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r136_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r138_repeat0_2_5_10,50.0,100.0,Completed,1,0,0,0,0,0
+density,RF3,r13_repeat0_1_8_10,16.912126350653605,28.186877251089342,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF3,r140_repeat0_4_8_10,10.417703764919978,28.938066013666607,Failed - Agent got blocked,0,2,0,1,0,0
+density,RF3,r142_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r145_repeat0_4_8_10,16.541110404309862,27.568517340516436,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF3,r145_repeat0_5_5_50,18.03490408785994,30.058173479766566,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF3,r146_repeat0_1_8_10,65.0,100.0,Completed,0,0,1,0,0,0
+density,RF3,r146_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r147_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r14_repeat0_4_8_10,4.821556343182625,13.39321206439618,Failed - Agent got blocked,0,2,0,1,0,0
+density,RF3,r157_repeat0_5_5_50,10.217251994547752,78.8368209455845,Failed - Agent got blocked,0,4,0,1,0,0
+density,RF3,r15_repeat0_4_8_10,4.821556343182625,13.39321206439618,Failed - Agent got blocked,0,2,0,1,0,0
+density,RF3,r16_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r16_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r18_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r18_repeat0_5_5_50,39.68592698371579,66.14321163952631,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF3,r19_repeat0_2_5_10,1.822552519031424,3.03758753171904,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF3,r1_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r1_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r20_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r22_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r24_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r25_repeat0_2_5_10,24.159837427414477,40.266395712357465,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF3,r28_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r28_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r2_repeat0_1_8_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF3,r2_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r300_repeat0_1_8_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF3,r300_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r300_repeat0_3_5_10,21.6,100.0,Completed,0,3,0,0,0,0
+density,RF3,r301_repeat0_3_5_10,6.4799999999999995,100.0,Completed,1,4,0,0,0,0
+density,RF3,r305_repeat0_3_5_10,18.0,100.0,Completed,1,2,0,0,0,0
+density,RF3,r306_repeat0_5_5_50,19.47272160642257,32.45453601070429,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF3,r310_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r310_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r310_repeat0_5_5_50,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r311_repeat0_3_5_10,7.776,100.0,Completed,0,5,0,0,0,0
+density,RF3,r311_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r312_repeat0_4_8_10,12.959999999999999,100.0,Completed,0,4,0,0,0,0
+density,RF3,r313_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF3,r314_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r315_repeat0_5_5_50,34.06954706518065,56.78257844196775,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF3,r316_repeat0_3_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r317_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r318_repeat0_5_5_50,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r31_repeat0_1_8_10,26.299644332790187,43.832740554650314,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF3,r31_repeat0_3_5_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF3,r31_repeat0_5_5_50,25.416157927865218,42.360263213108695,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF3,r320_repeat0_2_5_10,15.0,100.0,Completed,2,1,0,0,0,0
+density,RF3,r320_repeat0_3_5_10,3.193970209510205,21.293134730068033,Failed - Agent got blocked,2,1,0,1,0,0
+density,RF3,r321_repeat0_2_5_10,25.050869347201434,69.58574818667066,Failed - Agent got blocked,0,2,0,1,0,0
+density,RF3,r321_repeat0_4_8_10,36.0,100.0,Completed,0,2,0,0,0,0
+density,RF3,r322_repeat0_2_5_10,4.343170440259758,33.5121175945969,Failed - Agent got blocked,0,4,0,1,0,0
+density,RF3,r323_repeat0_4_8_10,8.045334966282436,37.24692114019646,Failed - Agent got blocked,0,3,0,1,0,0
+density,RF3,r324_repeat0_3_5_10,30.0,100.0,Completed,1,1,0,0,0,0
+density,RF3,r326_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r327_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r328_repeat0_2_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r328_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r329_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r329_repeat0_3_5_10,39.27114678450426,65.4519113075071,Failed - Agent got blocked,0,1,0,1,0,0
+density,RF3,r330_repeat0_3_5_10,3.7306435356191936,47.9763829169135,Failed - Agent got blocked,0,5,0,1,0,0
+density,RF3,r331_repeat0_3_5_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r331_repeat0_4_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r3_repeat0_1_8_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r3_repeat0_2_5_10,100.0,100.0,Completed,0,0,0,0,0,0
+density,RF3,r5_repeat0_1_8_10,60.0,100.0,Completed,0,1,0,0,0,0
+density,RF3,r9_repeat0_4_8_10,100.0,100.0,Completed,0,0,0,0,0,0

@@ -1,0 +1,7 @@
+method,weather,counted_jobs,excluded_jobs,driving_score_mean,route_completion_mean,collisions_pedestrian,collisions_vehicle,collisions_layout,vehicle_blocked,stop_infraction,outside_route_lanes,collisions_total
+baseline,OFF,73,12,64.95,92.99,8,67,2,10,1,0,77
+baseline,RF2,73,12,62.98,91.39,8,73,0,12,4,0,81
+baseline,RF3,73,12,63.71,89.76,7,73,2,11,0,0,82
+density,OFF,73,12,57.55,88.49,6,71,4,17,9,1,81
+density,RF2,73,12,54.53,91.59,11,91,2,12,7,0,104
+density,RF3,73,12,56.48,83.29,8,79,1,20,0,0,88
